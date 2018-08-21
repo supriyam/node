@@ -11,7 +11,7 @@ module.exports = {
     get:(req,res)=>{
         console.log(req.params);
         empModel.getData(req,(resp)=>{
-            res.json(resp);
+            res.send(resp);
         })
     },
     getId:(req,res)=>{

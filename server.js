@@ -11,7 +11,7 @@ app.use('/',userContr);
 
 app.post('/emp',empContr.save);
 
-app.use('/get/:age',empContr.get);
+app.use('/get',empContr.get);
 
 app.use('/getId/:id',empContr.getId);
 
